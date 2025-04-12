@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: multiempresa-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    rootDir: backend
+    envVars:
+      - key: PORT
+        value: 5000
